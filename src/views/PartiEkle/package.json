@@ -1,0 +1,6 @@
+{
+  "name": "KullaniciDuzenle",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./KullaniciDuzenle.js"
+}

@@ -35,12 +35,36 @@ const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
+const KullaniciEkle = React.lazy(() => import('./views/KullaniciEkle/KullaniciEkle'))
+const KullaniciDuzenle = React.lazy(() => import('./views/KullaniciDuzenle/KullaniciDuzenle'))
+const TutanakEkle = React.lazy(() => import('./views/TutanakEkle/TutanakEkle'))
+const TutanakDuzenle = React.lazy(() => import('./views/TutanakDuzenle/TutanakDuzenle'))
+const SandikEkle = React.lazy(() => import('./views/SandikEkle/SandikEkle'))
+const SandikDuzenle = React.lazy(() => import('./views/SandikDuzenle/SandikDuzenle'))
+const AdayEkle = React.lazy(() => import('./views/AdayEkle/AdayEkle'))
+const AdayDuzenle = React.lazy(() => import('./views/AdayDuzenle/AdayDuzenle'))
+const PartiEkle = React.lazy(() => import('./views/PartiEkle/PartiEkle'))
+const PartiDuzenle = React.lazy(() => import('./views/PartiDuzenle/PartiDuzenle'))
+const IttifakEkle = React.lazy(() => import('./views/IttifakEkle/IttifakEkle'))
+const IttifakDuzenle = React.lazy(() => import('./views/IttifakDuzenle/IttifakDuzenle'))
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/', exact: true, name: 'Anasayfa' },
+  { path: '/dashboard', name: 'Kontrol Paneli', component: Dashboard },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
+  { path: '/veritabani/kullanici/ekle', exact: true, name: 'Kullanıcı Ekle', component: KullaniciEkle },
+  { path: '/veritabani/kullanici/duzenle', exact: true, name: 'Kullanıcıları Düzenle', component: KullaniciDuzenle },
+  { path: '/veritabani/tutanak/ekle', exact: true, name: 'Tutanak Ekle', component: TutanakEkle },
+  { path: '/veritabani/tutanak/duzenle', exact: true, name: 'Tutanakları Düzenle', component: TutanakDuzenle },
+  { path: '/veritabani/sandik/ekle', exact: true, name: 'Sandık Ekle', component: SandikEkle },
+  { path: '/veritabani/sandik/duzenle', exact: true, name: 'Sandıkları Düzenle', component: SandikDuzenle },
+  { path: '/veritabani/aday/ekle', exact: true, name: 'Aday Ekle', component: AdayEkle },
+  { path: '/veritabani/aday/duzenle', exact: true, name: 'Adayları Düzenle', component: AdayDuzenle },
+  { path: '/veritabani/parti/ekle', exact: true, name: 'Parti Ekle', component: PartiEkle },
+  { path: '/veritabani/parti/duzenle', exact: true, name: 'Partileri Düzenle', component: PartiDuzenle },
+  { path: '/veritabani/ittifak/ekle', exact: true, name: 'İttifak Ekle', component: IttifakEkle },
+  { path: '/veritabani/ittifak/duzenle', exact: true, name: 'İttifakları Düzenle', component: IttifakDuzenle },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', exact: true, name: 'Base', component: Cards },

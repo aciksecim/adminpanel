@@ -23,20 +23,17 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
+          full={{ src: logo, width: 120, alt: 'Açıkseçim Logo' }}
+          minimized={{ src: sygnet, width: 30, height: 30, alt: 'Açıkseçim Logo' }}
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
 
         <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
-            <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
+            <NavLink to="/dashboard" className="nav-link" >Kontrol Paneli</NavLink>
           </NavItem>
           <NavItem className="px-3">
-            <Link to="/users" className="nav-link">Users</Link>
-          </NavItem>
-          <NavItem className="px-3">
-            <NavLink to="#" className="nav-link">Settings</NavLink>
+            <NavLink to="#" className="nav-link">Ayarlar</NavLink>
           </NavItem>
         </Nav>
         <Nav className="ml-auto" navbar>
@@ -54,19 +51,19 @@ class DefaultHeader extends Component {
               <img src={'../../assets/img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto' }}>
-              <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-bell-o"></i> Updates<Badge color="info">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-envelope-o"></i> Messages<Badge color="success">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-tasks"></i> Tasks<Badge color="danger">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-comments"></i> Comments<Badge color="warning">42</Badge></DropdownItem>
-              <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-user"></i> Profile</DropdownItem>
-              <DropdownItem><i className="fa fa-wrench"></i> Settings</DropdownItem>
-              <DropdownItem><i className="fa fa-usd"></i> Payments<Badge color="secondary">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-file"></i> Projects<Badge color="primary">42</Badge></DropdownItem>
+              <DropdownItem header tag="div" className="text-center"><strong>Hesap</strong></DropdownItem>
+              <DropdownItem><i className="fa fa-bell-o"></i> Güncellemeler<Badge color="info">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-envelope-o"></i> Mesajlar<Badge color="success">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-tasks"></i> Görevler<Badge color="danger">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-comments"></i> Yorumlar<Badge color="warning">42</Badge></DropdownItem>
+              <DropdownItem header tag="div" className="text-center"><strong>Ayarlar</strong></DropdownItem>
+              <DropdownItem><i className="fa fa-user"></i> Profil</DropdownItem>
+              <DropdownItem><i className="fa fa-wrench"></i> Ayarlar</DropdownItem>
+              <DropdownItem><i className="fa fa-usd"></i> Ödemeler<Badge color="secondary">42</Badge></DropdownItem>
+              <DropdownItem><i className="fa fa-file"></i> Projeler<Badge color="primary">42</Badge></DropdownItem>
               <DropdownItem divider />
-              <DropdownItem><i className="fa fa-shield"></i> Lock Account</DropdownItem>
-              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Logout</DropdownItem>
+              <DropdownItem><i className="fa fa-shield"></i> Hesabı Kilitle</DropdownItem>
+              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Çıkış Yap</DropdownItem>
             </DropdownMenu>
           </AppHeaderDropdown>
         </Nav>
